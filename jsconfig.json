@@ -1,0 +1,12 @@
+{
+    "exclude": [
+        "node_modules",
+        "target",
+    ],
+    "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+          "@/*": ["./src/*"],
+      }
+  },    
+}
