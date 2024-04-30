@@ -2,6 +2,7 @@
   "name": "thrill",
   "version": "0.0.0",
   "description": "Thrill",
+  "homepage": "https://didacesteban.github.io/thrill-mvp/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

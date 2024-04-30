@@ -8,7 +8,7 @@ const Router = ({ routes }) => {
       {routes.map((route) => (
         <Route
           key={route}
-          path={`/thrill/${route.path}`}
+          path={`/${route.path}`}
           element={<div>{route.element}</div>}
         />
       ))}

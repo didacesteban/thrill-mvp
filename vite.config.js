@@ -12,7 +12,7 @@ export default defineConfig({
     }),
     reactRefresh(),
   ],
-  base: "/thrill/",
+  base: "thrill-mvp",
   build: {
     outDir: "target/dist",
     rollupOptions: {
@@ -24,7 +24,7 @@ export default defineConfig({
   },
   server: {
     port: 8081,
-    open: "/thrill/",
+    open: "/thrill-mvp/",
   },
   resolve: {
     alias: [
