@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import {UserCircleIcon} from "@heroicons/react/solid"
 import Router from "./Router";
 import { getRoutes } from "./Routes";
@@ -11,7 +11,7 @@ function App() {
         <div className="text-white flex items-center">
             <a href="/" className="font-semibold inline-block">thrill</a>
         </div>
-        <a href="/thrill-mvp/profile"><UserCircleIcon className="w-6 h-6 fill-white"/></a>
+        <Link to="profile"><UserCircleIcon className="w-6 h-6 fill-white"/></Link>
     </div>
     <div>
       <Router routes={getRoutes()} />
