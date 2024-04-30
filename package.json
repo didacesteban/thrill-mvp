@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "deploy": "gh-pages -d target",
     "lint": "eslint --ext .js,.jsx,.json --fix src"
   },
   "dependencies": {
@@ -18,6 +19,7 @@
     "activity-detector": "^3.0.0",
     "buffer": "^6.0.3",
     "clsx": "^1.2.1",
+    "gh-pages": "^6.1.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.4",
