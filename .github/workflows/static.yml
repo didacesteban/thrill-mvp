@@ -42,8 +42,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.email "didacesteban@gmail.com"
-          git config --global user.name "GitHub Actions"
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
           git commit -m "Build assets"
           git push
