@@ -9,7 +9,7 @@ export default function Profile() {
       <div className="flex flex-wrap">
         <div className="w-full px-4 flex  bg-indigo-100 relative w-full h-48 flex flex-col items-center justify-end">
           <div className="absolute bottom-20">
-            <img src="https://pbs.twimg.com/profile_images/675440006870261760/nWA4xWwo_400x400.jpg" className="shadow-xl rounded-full h-auto align-middle border-none w-48 h-48" />
+            <img src="https://pbs.twimg.com/profile_images/675440006870261760/nWA4xWwo_400x400.jpg" className="shadow-xl rounded-full h-auto align-middle border-2 border-indigo-100 w-48 h-48" />
           </div>
           <div className="w-full text-center">
             <div className="flex py-4 bg-indigo-100 text-indigo-950 flex justify-between items-center p-4">
