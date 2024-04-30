@@ -22,6 +22,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'  # Specify the Node.js version you want to use
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
   # Single deploy job since we're just deploying
   deploy:
     environment:

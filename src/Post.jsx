@@ -28,7 +28,7 @@ export default function Post() {
     image: "https://www.theproject.es/archivos/razzmatazz-barcelona-16209.jpg",
     rating: 90,
     date: "3/05"
-}].find(post => post.id === parseInt(id));
+}].find(post => post.id === 1);
 
   return (<div><div className="overflow-hidden flex flex-col" key={post.name}>
 
