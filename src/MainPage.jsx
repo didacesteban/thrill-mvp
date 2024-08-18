@@ -1,39 +1,16 @@
 import React from "react";
+import { Link} from "react-router-dom";
 import { CalendarIcon, HeartIcon } from "@heroicons/react/solid";
 
-export default function MainPage({setOpenPage}) {
-    const data = [{
-        id: 1,
-        name: "Razzmatazz",
-        type: "DJ",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "https://www.theproject.es/archivos/razzmatazz-barcelona-16209.jpg",
-        rating: 73,
-        date: "3/05"
-    }, {
-        id: 2,
-        name: "Apolo",
-        type: "Banda",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "https://www.theproject.es/archivos/razzmatazz-barcelona-16209.jpg",
-        rating: 93,
-        date: "3/05"
-    }, {
-        id: 3,
-        name: "El Molino",
-        type: "Mago",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: "https://www.theproject.es/archivos/razzmatazz-barcelona-16209.jpg",
-        rating: 90,
-        date: "3/05"
-    }]
+export default function MainPage({ data }) {
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
 
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {data && data.map((post) => <div className="rounded overflow-hidden shadow-lg flex flex-col" key={post.name}>
-            <div className="relative" onClick={() => setOpenPage("post")}>
+            <Link to={`post/${post.id}`}>
+            <div className="relative">
                     <img className="w-full"
                         src={post.image}
                         alt="Sunset in the mountains" />
@@ -42,14 +19,13 @@ export default function MainPage({setOpenPage}) {
                     </div>
               
                 <span>
-                    <div
-                    onClick={() => setOpenPage("post")}
-                        className="text-xs absolute top-0 right-0 bg-orange-500 px-4 py-2 text-white mt-3 mr-3 hover:bg-indigo-100 transition duration-500 ease-in-out">
+                    <div className="text-xs absolute top-0 right-0 bg-orange-500 px-4 py-2 text-white mt-3 mr-3 hover:bg-indigo-100 transition duration-500 ease-in-out">
                         {post.type}
                     </div>
                 </span>
             </div>
-            <div className="px-6 py-4 mb-auto" onClick={() => setOpenPage("post")}>
+            </Link>
+            <div className="px-6 py-4 mb-auto">
                 <span
                     className="font-medium text-lg inline-block indigo-950 mb-2">
                     {post.name}</span>
